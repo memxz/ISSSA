@@ -1,0 +1,7 @@
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\bin\Debug\MyFirstCsharpProject.exe.config
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\bin\Debug\MyFirstCsharpProject.exe
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\bin\Debug\MyFirstCsharpProject.pdb
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\obj\Debug\MyFirstCsharpProject.csproj.AssemblyReference.cache
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\obj\Debug\MyFirstCsharpProject.csproj.CoreCompileInputs.cache
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\obj\Debug\MyFirstCsharpProject.exe
+C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\MyFirstCsharpProject\MyFirstCsharpProject\obj\Debug\MyFirstCsharpProject.pdb
