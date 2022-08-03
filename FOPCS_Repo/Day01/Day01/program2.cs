@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstCsharpProject
+namespace Day01
 {
-    class Class1
+    class program2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World, add a new class to my current project");
+            Console.WriteLine("Please enter your name:");
+            string name = Console.ReadLine();
+            Console.WriteLine("Good morning Mr {0 }", name);
             Console.ReadLine();
         }
     }

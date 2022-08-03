@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstCsharpProject
+namespace Day01
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World, Hello C sharp");
+            Console.WriteLine("John Smith\ne0011223@u.nus.edu");
             Console.ReadLine();
         }
     }
