@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day01.prgram3</StartupObject>
+    <StartupObject>Day01.ExerciseB</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day2Quiz.cs" />
+    <Compile Include="ExerciseB.cs" />
     <Compile Include="prgram3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="program2.cs" />
