@@ -19,8 +19,9 @@
   2. Write a program that would request for your name and print a greeting like this: Good Morning John where John is the name you had input.
   3. Write a program that takes an integer as input and prints the square of that number.
   4. Write a program that takes a double precision number as input and prints the square of that number.
-  5. Write a program that takes a double precision number as input and prints the number with 2 decimal points in the output.
+  5. Write a program that takes a double precision number as input and prints the number with 2 decimal points in the output.   
 
+### Exercise B (Day2)
 
 
 
