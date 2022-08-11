@@ -1,0 +1,236 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day01
+{
+    class ExerciseE
+    {
+        // E1 recursive
+        /*static int factorial(int n)
+        {
+            if (n == 1 || n==0)
+            {
+                return 1;
+            }
+            else
+            return n * factorial(n - 1);
+        }
+        static void Main(string[] args)
+        {
+                Console.WriteLine("Pls enter a number: ");
+                int num = int.Parse(Console.ReadLine());
+                Console.WriteLine(factorial(num));
+            Console.Read();       
+        }*/
+
+        // E1 Increament
+        /*static void Main(string[] args)
+        {
+            int fact=1;
+            Console.WriteLine("Pls enter a number: ");
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
+            {
+                fact = fact * i;
+            }
+            Console.WriteLine(fact);
+            Console.Read();
+        }*/
+
+        //E1 Decreament
+        /*static void Main(string[] args)
+        {
+            int fact = 1;
+            Console.WriteLine("Pls enter a number: ");
+            int num = int.Parse(Console.ReadLine());
+            for (int i = num; i>=1; i--)
+            {
+                fact = fact * i;
+            }
+            Console.WriteLine(fact);
+            Console.Read();
+        }*/
+
+        // E2
+        /*static void Main(string[] args)
+        {
+            Console.WriteLine("NO\tINVERSE\tSQUAREROOT\tSQUARE");
+            for(int i = 1; i<= 10; i++)
+            {
+                string inv = $"{Math.Pow(i, -1):0.0##}";
+                string sqrt = $"{Math.Sqrt(i):0.0##}";
+                Console.WriteLine($"{i:0.0}"+"\t" +inv + "\t"+ sqrt + "\t\t"+$"{i * i:0.0##}");
+            }
+
+            Console.Read();
+        }*/
+
+        //E3
+        /*static void Main(string[] args)
+        {
+            Console.WriteLine("Pls input an integer number: ");
+            int n = int.Parse(Console.ReadLine());
+            int a = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    a++;
+                }
+            }
+            if (a == 2)
+            {
+                Console.WriteLine("{0} is a Prime Number", n);
+            }
+            else
+            {
+                Console.WriteLine("Not a Prime Number");
+            }
+            Console.ReadLine();
+        }*/
+
+
+        // E4
+        /*static void Main(string[] args)
+        {
+            int number, sum = 0;
+            string divisors = "";
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("                   Perfect Number                              ");
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.Write("Enter Number To Check :: ");
+            number = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    sum += i;
+                    divisors += i.ToString() + "+";
+                }
+            }
+            divisors = divisors.Remove(divisors.Length - 1, 1);
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine(divisors + " = " + sum);
+            if (sum == number)
+            {
+                Console.WriteLine("Hence , " + number + " Is A Perfect Number");
+            }
+            else
+                Console.WriteLine("Hence , " + number + " Is Not A Perfect Number");
+
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.ReadKey();
+        }*/
+
+
+        //E5
+        /*static void Main(string[] args)
+        {
+            Console.WriteLine("prime numbers from 5 to 10000 ");
+           
+            for (int n = 5; n <= 10000; n++)
+            {
+                int a = 0;
+                for (int i = 1; i <= n; i++)
+                {
+                    if (n % i == 0)
+                    {
+                        a++;
+                    }
+                }
+                if (a == 2)
+                {
+                    Console.WriteLine("{0} is a Prime Number", n);
+                }
+                else
+                {
+                    Console.WriteLine("{0} Not a Prime Number",n);
+                }
+            }
+            
+            Console.ReadLine();
+        }*/
+
+
+        // E6
+        /*static void Main(string[] args)
+        {
+            int number;
+            
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("                   Perfect Number                              ");
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine("print out all the perfect numbers from 1 to 1000");
+            for(number = 1; number <= 900; number++)
+            {
+                int sum = 0;
+                for (int i = 1; i < number; i++)
+                {
+                    if (number % i == 0)
+                    {
+                        sum += i;
+                    }
+                }
+                Console.WriteLine("---------------------------------------------------------------");
+                if (sum == number)
+                {
+                    Console.WriteLine("Hence , " + number + " Is A Perfect Number");
+                }
+                else
+                    Console.WriteLine("Hence , " + number + " Is Not A Perfect Number");
+            }
+            
+
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.ReadKey();
+        }*/
+
+        //F5
+        static void Main(string[] args)
+        {
+            string[] names = new string[] { "john", "Venkat", "Mary", "Victor", "Betty" };
+            int[] marks = new int[] { 63, 29, 75, 82, 55 };
+            Dictionary<int, string> student = new Dictionary<int, string>()
+            {
+                {63,"john" },
+                {29,"Venkat" },
+                {75,"Mary" },
+                {82,"Victor" },
+                {55,"Betty" }
+            };
+            int temp,i,j;
+            for (i = 0; i < names.Length-1; i++)
+            {
+                for (j = 0; j <i; j++)
+                {
+
+                    if (marks[j] < marks[j + 1])
+                    {
+                        temp = marks[j +1];
+                        marks[j +1] = marks[j];
+                        marks[j] = temp;
+                    }
+
+                }
+                marks[i] = marks[j];
+            }
+            for(int k = 0; k < 5; k++)
+            {
+                string value = "";
+                if (student.TryGetValue(marks[k], out value))
+                {
+                    Console.WriteLine("For marks = {0}, name = {1}.",marks[k], value);
+                }
+            }
+            Console.WriteLine(names.Length);
+            Console.Read();
+
+
+        }
+
+    }
+}

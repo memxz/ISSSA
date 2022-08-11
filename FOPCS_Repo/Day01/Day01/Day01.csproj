@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day01.ExerciseC</StartupObject>
+    <StartupObject>Day01.ExerciseE</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,8 +48,10 @@
   <ItemGroup>
     <Compile Include="Day2Quiz.cs" />
     <Compile Include="Day3Quiz.cs" />
+    <Compile Include="Day4Quiz.cs" />
     <Compile Include="ExerciseB.cs" />
     <Compile Include="ExerciseC.cs" />
+    <Compile Include="ExerciseE.cs" />
     <Compile Include="prgram3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="program2.cs" />
