@@ -205,7 +205,7 @@ namespace Day01
             int temp,i,j;
             for (i = 0; i < names.Length-1; i++)
             {
-                for (j = 0; j <i; j++)
+                for (j = 0; j < names.Length - 1; j++)
                 {
 
                     if (marks[j] < marks[j + 1])
@@ -216,7 +216,7 @@ namespace Day01
                     }
 
                 }
-                marks[i] = marks[j];
+                
             }
             for(int k = 0; k < 5; k++)
             {
