@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Customer Register Portal</title>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet">
+</head>
+  <body> 
+
+  <div id="wrapper">
+   <h1 id="header"> <img src="airplane.JPG" width="320" height="117" title="logo">Sweetdreams </h1>
+
+	<div id="content">
+		<h2>Customer Register</h2>
+		<table>
+			<form name="information" method="post" id="information" action="mailto:your@email.com">
+				<tr>
+					<td>
+						<label id="alignRight" for="myName"> *Name: </label> 
+						<input type="text" name ="myName" id="myName" required>
+						<label id="alignRight" for="gender"> *Gender: </label> 
+						<label for="male"> Male </label> 
+						<input type="radio" name="genderRB" value="Male" checked="checked">
+						<label for="female"> Female </label> 
+						<input type="radio" name="genderRB" value="Female"><br>
+						<label id="alignRight" for="myPassword"> Password: </label>
+						<input type="password" name ="myPassword" id="myPassword">
+						<label id="alignRight" for="telnum">Tel No.:</label>
+						<input type="telnum" id="telnum" />
+						<label id="alignRight" for="email">Email:</label>
+						<input type="email" id="email" />
+						<label id="alignRight" for="residentStatus">Resident Status:</label>
+							<label>
+							<input type="radio" name="statusRB" value="Citizen" checked="checked" />Citizen
+							</label>
+							<label> 		
+							<input type="radio" name="statusRB" value="PR"/>PR 	
+							</label>
+							<label>  
+							<input type="radio" name="statusRB" value="Foreigner" />Foreigner	
+							</label><br>
+						<label id="alignRight" for="country">Country:</label>
+						<select id="country" name="country">
+							<option value="Singapore">Singapore</option>
+							<option value="china">China</option>
+							<option value="Malaysia">Malaysia</option>
+							<option value="india">India</option>
+							<option value="Indonesia">Indonesia</option>
+						</select><br>
+						<label id="alignRight" for="remarks"> Remarks: </label>
+						<textarea name="remarks" id="remarks" cols="20" rows="2" required> </textarea>
+						<label id="alignRight" for="myDate"> Date: </label>
+						<input type="date" name ="myDate" id="myDate">
+						<input type="submit" value="Submit Now"> 
+				</td>
+				</tr>
+			</form>
+		</table>
+	</div>	      
+	<div id="footer">
+	<small><i> Copyright © 2022 GPSAB55</i><br>
+	<small><a href="mailto:E123456@nus.com">E123456@nus.com</a>
+	</div>
+	</div>
+</body>
+</html>
