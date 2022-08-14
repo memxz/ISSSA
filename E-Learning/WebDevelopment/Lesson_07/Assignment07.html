@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Assignment07</title>
+        <style>
+            table,tr,td {
+                border:1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            
+            tr:nth-of-type(1)	{background-color:lightblue;}	
+        </style>
+        <!-- Q4 script-->
+        <script>
+            function numberSum(N) {
+            var total = 0;
+                for(var i = 1; i <= N; i++){
+                total += i;
+                }
+                return total;
+            }
+            function myNewProgram()
+            {
+            var n = document.getElementById("inputTextBox").value;
+            var result = numberSum(n);
+            document.getElementById("outputTextBox").value = result;
+            }
+            const createTable = (row, col) => {
+                let body = document.body;
+                let tbl = document.createElement("table");
+                for (let i = 0; i < row; i++) {
+                    let tr = tbl.insertRow();
+                    for (let j = 0; j < col; j++) {
+                        let td = tr.insertCell();
+                        if(i==0){
+                            switch (j){
+                                case 0: 
+                                td.appendChild(document.createTextNode("X"));
+                                break;
+                                case 1: 
+                                td.appendChild(document.createTextNode("X²"));
+                                break;
+                                case 2:
+                                td.appendChild(document.createTextNode("1/X"));
+                                break;
+                                case 3:
+                                td.appendChild(document.createTextNode("√X"));
+                                break;
+                                default: break;
+                            }
+                        }if(i!=0) {
+                            switch (j){
+                                case 0: 
+                                td.appendChild(document.createTextNode(`${i}`));
+                                break;
+                                case 1: 
+                                td.appendChild(document.createTextNode(`${(i*i)}`));
+                                break;
+                                case 2:
+                                td.appendChild(document.createTextNode(`${parseFloat((1/i).toFixed(3))}`));
+                                break;
+                                case 3:
+                                td.appendChild(document.createTextNode(`${parseFloat(Math.sqrt(i).toFixed(3))}`));
+                                break;
+                                default: break;
+                            }
+                        }
+                       // td.style.border = "1px solid black";
+                    }
+                }
+                 body.appendChild(tbl);
+            };
+        </script>
+    </head>
+<body>
+    <h3>Q1</h3>
+    <script>
+        var n = prompt("Question1: Enter a number");
+        var result = n*n*n*3+7*n*n+2*n+5;
+        document.writeln("Result is: "+result);
+    </script>
+    <h3>Q2</h3>
+    <script>
+        var d = prompt("Question2: Enter a number");
+        if(d<12)
+        document.writeln("Good Morning");
+        else
+        document.writeln("Good Afternoon");
+    </script>
+    <h3>Q3</h3>
+    <script>
+        var m = prompt("Question3: Enter a number");
+        var name = prompt("Question3: Enter your name");
+        if(d<12)
+        document.writeln("Good Morning, "+name);
+        else
+        document.writeln("Good Afternoon, "+name);
+    </script>
+    <h3>Q4</h3>
+    <p> Enter a value of n: <input type="text" id="inputTextBox" /> </p>
+    <p> The result is: <input type="text" id="outputTextBox" /> </p>
+    <p> <input type="submit" value="Compute" onclick="myNewProgram()" /> </p>
+
+    <h3>Q5</h3>
+    <button type="button" onclick="createTable(6,4)" >Generate Table</button>
+</body>
+</html>

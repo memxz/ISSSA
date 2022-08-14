@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet">
+<script type="text/javascript" src="validator.js"></script>
+</head>
+  <body> 
+		<table>
+			<form name="information" method="post" onsubmit="return validateForm()" id="information" action="">
+				<tr>
+					<td>
+						<label id="alignRight" for="myName"> Name: </label> 
+						<input type="text" name ="myName" id="myName">
+						<label id="alignRight" for="age"> Age: </label>
+						<input type="number" min="0" name ="age" id="age">
+						<label id="alignRight" for="gender"> Gender: </label> 
+						<label for="male"> Male </label> 
+						<input type="radio" name="genderRB" value="Male" checked="checked">
+						<label for="female"> Female </label> 
+						<input type="radio" name="genderRB" value="Female"><br>
+						
+						<label id="alignRight" for="telnum">Phone:</label>
+						<input type="telnum" id="telnum" />
+						<label id="alignRight" for="residentStatus">Hobbies:</label>
+							<label>
+							<input type="checkbox" name="statusRB" value="read" checked="checked" />Reading
+							</label>
+							<label> 		
+							<input type="checkbox" name="statusRB" value="Sports"/>Sports 	
+							</label>
+							<label>  
+							<input type="checkbox" name="statusRB" value="Movie" />Movie	
+							</label>
+							<label>  
+							<input type="checkbox" name="statusRB"  value="Travelling" />Travelling	
+							</label><br>
+							<input type="submit" value="Submit Now"><br> 
+			
+						
+				</td>
+				<tr><td>
+					<label id="alignRight" for="Error"> Output: </label>
+					<textarea name="output" id="output" cols="40" rows="5" required> </textarea>
+					<label id="alignRight" for="Error"> Error: </label>
+					<textarea name="error" id="error" cols="40" rows="5" required> </textarea>
+				</td></tr>
+				</tr>
+			</form>
+		</table>
+</body>
+
+</html>

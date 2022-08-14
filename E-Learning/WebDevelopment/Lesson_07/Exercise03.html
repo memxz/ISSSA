@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta http-equiv="expires" content="Sat, 13 Sept 2008 12:00:00 GMT" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <title></title>
+
+    <script type="text/javascript">
+   // <!--
+
+        function Write()
+        {
+
+            var x = document.getElementById('text');
+            var y = document.getElementById('box');
+
+            x.innerHTML = y.value;
+
+        }
+
+    //-->
+    /* 
+    <form action="PayslipServlet" method="get">
+          Last name:    <input type="text" name="lname" id="lname"><br/>
+          First name:   <input type="text" name="fname" id="fname"><br/>
+          Middle name:  <input type="text" name="mname" id ="mname"><br/>
+          Name: <span id="result"></span>
+          <br>
+          <input type="button" value="Submit" onClick="pr()">
+        </form>
+    function pr() {
+            document.getElementById("result").innerHTML = document.getElementById('fname').value + " " + document.getElementById('mname').value + " " + document.getElementById('lname').value;
+          } */
+    </script>
+
+</head>
+
+
+<body>
+
+    <form action="">
+            Textbox: <input type="text" id="box" onkeyup="Write()" /><br />
+            <p id="text"></p>
+    </form>
+
+</body>
+
+
+</html>
