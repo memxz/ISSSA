@@ -1,0 +1,281 @@
+body{background:skyblue;
+	font-family: Arial;
+	color: #211a1a;
+	font-size: 0.9em;}
+
+
+.main_wrapper{
+width:1000px;
+height:auto;
+margin:auto;
+}
+.header_wrapper{
+width:1000px;
+height:150px;
+margin:auto;		
+}
+#logo{float:left;
+}
+#banner{float:right;
+}
+.content_wrapper{
+	
+	width:1000px;
+	margin:auto;
+	background:pink;
+}
+.content_area{
+	background:#ffffcc;
+}
+.menubar{
+	width:1000px;
+	height:50px;
+	color:white;
+	float:left;
+	background:gray;
+}
+#menu{
+	padding:5px;
+	margin:0;
+	line-height:35px;
+	float:left;
+}
+#menu li{
+	list-style:none;
+	display:inline;
+}
+#menu a{
+	text-decoration:none;
+	color:white;
+	padding:0px;
+	margin:8px;
+	font-size:18px;
+	font-family:COMIC SANS MS;	
+}
+# a :hover{
+	color:orange;
+font-weight:border;}
+
+#form{
+	float:right;
+	padding-right:8px;
+	line-height:50px;
+}
+#content_area{
+	width:800px;
+	float:right;
+	background:pink;
+}
+#rings{
+		
+	list-style:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-family:comic sans MS;
+	
+}
+#rings li{
+	list-style:none;
+	margin:40px;
+	font-family:comic sans MS;
+}
+#material{
+	list-style:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-family:comic sans MS;
+}
+#material li{
+	list-style:none;
+	margin:40px;
+	font-family:comic sans MS;
+}
+#products_box{
+height:auto;
+width:800px;
+text-align:center;
+
+}
+
+#single_product{
+float:left;
+margin:50px;
+padding:10px;
+}
+
+#single_product img{border:2px solid black;	
+
+}
+
+#footer{
+	width:1000px;
+	height:50px;
+	background:gray;
+	clear:both;
+ 
+}
+
+.text-right {
+	text-align: right;
+}
+
+#shopping-cart {
+	margin: 40px;
+}
+
+#product-grid {
+	margin-left: 50px;
+}
+
+#shopping-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+	background-color: #FFFFFF;
+}
+
+.txt-heading {
+	color: #211a1a;
+	border-bottom: 1px none #E0E0E0;
+	overflow: auto;
+}
+.txt-heading h1 {
+			margin-top:1px;
+
+}
+#btnEmpty {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#product-grid .txt-heading {
+	margin-bottom: 18px;
+}
+
+.product-item {
+	float: left;
+	background: #ffffff;
+	margin: 10px 30px 10px 0px;
+	border: #E0E0E0 1px double;
+	padding: 10px 10px 10px 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.product-item img {
+	width: 300px;
+    height: 280px;
+}
+.product-image {
+	height: 155px;
+	width: 250px;
+	background-color: #FFF;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight: normal;
+}
+
+.product-title {
+	margin-bottom: 20px;
+}
+
+.product-price {
+	float:left;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.product-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+
+
+#nav		{text-align:lefts;
+			float:left;
+			width:200px;
+			padding-top:10px;
+			font-style: bold;
+		}
+
+#nav a		{text-decoration:none;
+			font-weight: bold;
+			font-size: large;
+			background-color: #ccaa66
+		}
+
+#nav a:link 	{color:#996633;}
+
+#nav a:visited {color:#ccaa66;}
+
+#nav a:hover {color:#330000;}
+
+#nav ul		{list-style-type:none;}		
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
