@@ -5,3 +5,10 @@ C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\Day01\Day07\bin\Debug\Day07.exe
 C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\Day01\Day07\bin\Debug\Day07.pdb
 C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.exe
 C:\Users\meng\Desktop\ISS\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.pdb
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\bin\Debug\Day07.exe.config
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\bin\Debug\Day07.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\bin\Debug\Day07.pdb
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.csproj.AssemblyReference.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Day07\obj\Debug\Day07.pdb
