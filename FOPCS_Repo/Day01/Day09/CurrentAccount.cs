@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Day09
 {
-	public class CurrentAcount : Account
+	public class CurrentAccount : Account
 	{
         /**
        * TODO: attributes
        * Add instance or static attribute when neccessary
        */
-        static double interest=0.0025;
+       // static double interest=0.0025;
 
 
 
@@ -23,7 +23,7 @@ namespace Day09
          * of its parent's constructor to initialize
          * its attributes
          */
-         public CurrentAcount(string acctNumber, string acctHolderId, double balance) : base(acctNumber, acctHolderId, balance) { }
+         public CurrentAccount(string acctNumber, string acctHolderId, double balance) : base(acctNumber, acctHolderId, balance) { }
 
 
 
@@ -105,7 +105,7 @@ namespace Day09
          */
         public override string ToString()
         {
-            return base.ToString();
+            return string.Format("CurrentAccount {0}", base.ToString());
 
         }
     }

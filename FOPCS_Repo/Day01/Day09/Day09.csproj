@@ -47,9 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="BankBranch.cs" />
     <Compile Include="BasePlusComissionEmployee.cs" />
     <Compile Include="CommissionEmployee.cs" />
-    <Compile Include="CurrentAcount.cs" />
+    <Compile Include="CurrentAccount.cs" />
     <Compile Include="OverdraftAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
