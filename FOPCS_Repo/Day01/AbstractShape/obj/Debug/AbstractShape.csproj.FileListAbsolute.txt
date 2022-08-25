@@ -1,0 +1,7 @@
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\obj\Debug\AbstractShape.csproj.AssemblyReference.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\obj\Debug\AbstractShape.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\bin\Debug\AbstractShape.exe.config
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\bin\Debug\AbstractShape.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\bin\Debug\AbstractShape.pdb
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\obj\Debug\AbstractShape.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\AbstractShape\obj\Debug\AbstractShape.pdb

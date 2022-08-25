@@ -1,0 +1,7 @@
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\obj\Debug\InterfaceDemo.csproj.AssemblyReference.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\obj\Debug\InterfaceDemo.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\bin\Debug\InterfaceDemo.exe.config
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\bin\Debug\InterfaceDemo.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\bin\Debug\InterfaceDemo.pdb
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\obj\Debug\InterfaceDemo.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\InterfaceDemo\obj\Debug\InterfaceDemo.pdb
