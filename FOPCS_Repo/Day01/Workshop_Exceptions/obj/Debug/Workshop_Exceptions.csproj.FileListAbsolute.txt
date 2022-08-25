@@ -1,0 +1,7 @@
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\bin\Debug\Workshop_Exceptions.exe.config
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\bin\Debug\Workshop_Exceptions.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\bin\Debug\Workshop_Exceptions.pdb
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\obj\Debug\Workshop_Exceptions.csproj.AssemblyReference.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\obj\Debug\Workshop_Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\obj\Debug\Workshop_Exceptions.exe
+C:\Users\Cyrus\source\repos\ISSSA\FOPCS_Repo\Day01\Workshop_Exceptions\obj\Debug\Workshop_Exceptions.pdb
