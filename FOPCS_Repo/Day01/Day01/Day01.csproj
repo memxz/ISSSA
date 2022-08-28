@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day01.Dy6QuizQ2</StartupObject>
+    <StartupObject>Day01.ExerciseC</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

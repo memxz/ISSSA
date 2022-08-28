@@ -17,3 +17,6 @@ C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\obj\Debug\Day01.csproj.Sugg
 C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\obj\Debug\Day01.csproj.CoreCompileInputs.cache
 C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\obj\Debug\Day01.exe
 C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\obj\Debug\Day01.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\bin\Debug\Day01.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\bin\Debug\Day01.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\Day01\bin\Debug\Day01.pdb

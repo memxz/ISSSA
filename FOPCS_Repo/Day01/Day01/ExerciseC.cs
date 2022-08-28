@@ -1,14 +1,16 @@
 ﻿//#define C1
-#define C2
+//#define C2
 //#define C3
 //#define C4
 //#define C5
 //#define D1
 //#define D2
 //#define D3a
+#define D3b
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,7 +21,7 @@ namespace Day01
         static void Main(string[] args)
         {
             #region  C1
-            #if C1
+#if C1
             Console.Write("Pls Enter your name: ");
             string name = Convert.ToString((Console.ReadLine()).ToLower());
             Console.Write("\nPls Enter your Gender(M/F): ");
@@ -34,11 +36,11 @@ namespace Day01
                 Console.Write("Good morning, Mrs." + name.Substring(0, 1).ToUpper() + name.Substring(1));
                 Console.Read();
             }
-            #endif
+#endif
             #endregion
 
             #region  C2
-            #if C2
+#if C2
             Console.Write("Pls Enter your Name, Gender and Age(Pls seperate it by \',\'): ");
             string[] temp = Console.ReadLine().Split(',');
             string name = Convert.ToString(temp[0].ToLower());
@@ -78,7 +80,7 @@ namespace Day01
             #endregion
 
             #region C3
-            #if C3
+#if C3
             Console.WriteLine("Pls enter your Score: ");
             int score = int.Parse(Console.ReadLine());
             if (score < 0)
@@ -137,7 +139,7 @@ namespace Day01
 
             }
             Console.ReadLine();
-            #endif
+#endif
             #endregion
 
             #region C5
@@ -204,7 +206,7 @@ namespace Day01
             #endregion
 
             #region D3a
-            #if D3a
+#if D3a
             int n = 0;
             Random rnd = new Random();
             int num = rnd.Next(9);
@@ -224,35 +226,46 @@ namespace Day01
 #endif
             #endregion
 
-
+            #region D3b
+#if D3b
+            find:
             int n = 0;
             Random rnd = new Random();
             int num = rnd.Next(9);
             Console.WriteLine(num);
-            Console.WriteLine("Pls enter the number which you guess: ");
             while (true)
             {
-                
+                Console.WriteLine("Pls enter the number which you guess: ");
                 int guess = int.Parse(Console.ReadLine());
                 n++;
-                if (num == guess)
-                {
-                    if (n <= 2)
+                    if (n <= 2 && num == guess)
                     {
                         Console.WriteLine("You are a Wizard,congratulations, You have taken {0} times attempts to make the guess.", n);
                         break;
                     }
-                    else if (n > 2 && n <= 5)
+                    else if (n > 2 && n <= 5 && num == guess)
                     {
-                        Console.WriteLine("YYou are lousy!” Every time you make a wrong guess, You have taken {0} times and pls try it again.");
-
+                        Console.WriteLine("congratulations, You have taken {0} times attempts to make the guess.", n);
+                        break;
                     }
-                    else
-                        Console.WriteLine("pls try it again");
+                    else if(n>=5)
+                    {
+                        Console.WriteLine("YYou are lousy!” Every time you make a wrong guess, You have taken {0} times and pls try it again.", n);
+                        Console.WriteLine("pls try it again,Y/N");
+                        string sn= Console.ReadLine();
+                        if (sn == "Y")
+                            goto find;
+                        else
+                        {
+                            return;
+                        }
+                    } 
                     
-                }
+                
             }
             Console.ReadLine();
+            #endif
+            #endregion
         }
 
     }
