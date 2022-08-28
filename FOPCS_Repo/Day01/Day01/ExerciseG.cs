@@ -1,4 +1,12 @@
-﻿using System;
+﻿//#define G1
+#define G2
+//#define G3
+//#define G4
+//#define G5
+//#define G6
+//#define G5
+//#define G10
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,8 +73,9 @@ namespace Day01
         }
         static void Main(string[] args)
         {
-            // G1
-            /*Console.Write("Pls enter 12 month Sales Day in suquense(seperate by comma): ");
+        #region G1
+        #if G1
+            Console.Write("Pls enter 12 month Sales Day in suquense(seperate by comma): ");
             string[] input = Console.ReadLine().Split(',');
             int n = 0;
             double[] data = new double[12];
@@ -92,7 +101,7 @@ namespace Day01
                 }
                 sum = sum + e;
             }
-            *//*for (int i = 0; i < input.Length-1; i++)
+            for (int i = 0; i < input.Length-1; i++)
             {
                 for (int j = i + 1; j < input.Length; j++)
                 {
@@ -104,15 +113,17 @@ namespace Day01
                         data[i] = temp;
                     }
                 }
-            } *//*
+            } 
 
             Console.WriteLine("Minimum Sales: "+min);
             Console.WriteLine("Maximum Sales: "+max);
             Console.WriteLine("total Sales {0} and average sales {1}: " ,sum,sum/12);
-            Console.ReadKey();*/
+            Console.ReadKey();
 
-
-            //G2
+        #endif
+        #endregion
+        #region G2
+        #if G2
             Console.Write("Pls enter numbers (seperate by comma): ");
             string[] input = Console.ReadLine().Split(',');
             int[] data = new int[input.Length];
@@ -131,6 +142,8 @@ namespace Day01
             }
 
             Console.Read();
+        #endif
+        #endregion
         }
     }
 }
