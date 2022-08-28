@@ -1,4 +1,12 @@
-﻿using System;
+﻿//#define C1
+#define C2
+//#define C3
+//#define C4
+//#define C5
+//#define D1
+//#define D2
+//#define D3a
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,24 +17,29 @@ namespace Day01
     class ExerciseC
     {
         static void Main(string[] args)
-        {    // C1
-            /*Console.Write("Pls Enter your name: ");
+        {
+            #region  C1
+            #if C1
+            Console.Write("Pls Enter your name: ");
             string name = Convert.ToString((Console.ReadLine()).ToLower());
             Console.Write("\nPls Enter your Gender(M/F): ");
             string gender = Convert.ToString(Console.ReadLine()).ToUpper();
-            if(gender == "M")
+            if (gender == "M")
             {
                 Console.Write("Good morning, Mr." + name.Substring(0, 1).ToUpper() + name.Substring(1));
                 Console.Read();
             }
             else
             {
-                Console.Write("Good morning, Mrs." + name.Substring(0,1).ToUpper()+name.Substring(1));
+                Console.Write("Good morning, Mrs." + name.Substring(0, 1).ToUpper() + name.Substring(1));
                 Console.Read();
-            }*/
+            }
+            #endif
+            #endregion
 
-            // C2
-            /*Console.Write("Pls Enter your Name, Gender and Age(Pls seperate it by \',\'): ");
+            #region  C2
+            #if C2
+            Console.Write("Pls Enter your Name, Gender and Age(Pls seperate it by \',\'): ");
             string[] temp = Console.ReadLine().Split(',');
             string name = Convert.ToString(temp[0].ToLower());
             string gender = Convert.ToString(temp[1].ToUpper());
@@ -44,7 +57,7 @@ namespace Day01
                     Console.Write("Good morning, Mr. " + name.Substring(0, 1).ToUpper() + name.Substring(1));
                     Console.Read();
                 }
-                
+
             }
             else
             {
@@ -59,23 +72,26 @@ namespace Day01
                     Console.Read();
 
                 }
-                
-            }*/
 
-            // C3
-            /*Console.WriteLine("Pls enter your Score: ");
+            }
+#endif
+            #endregion
+
+            #region C3
+            #if C3
+            Console.WriteLine("Pls enter your Score: ");
             int score = int.Parse(Console.ReadLine());
             if (score < 0)
             {
                 Console.WriteLine("**Error**");
                 Console.Read();
             }
-            else if(score>=0 && score < 40)
+            else if (score >= 0 && score < 40)
             {
-                Console.WriteLine("You scored {0} marks which is F grade",score);
+                Console.WriteLine("You scored {0} marks which is F grade", score);
                 Console.Read();
             }
-            else if(score>=40 && score < 60)
+            else if (score >= 40 && score < 60)
             {
                 Console.WriteLine("You scored {0} marks which is C grade", score);
                 Console.Read();
@@ -85,7 +101,7 @@ namespace Day01
                 Console.WriteLine("You scored {0} marks which is B grade", score);
                 Console.Read();
             }
-            else if (score >= 80 && score <+ 100)
+            else if (score >= 80 && score < +100)
             {
                 Console.WriteLine("You scored {0} marks which is A grade", score);
                 Console.Read();
@@ -94,10 +110,12 @@ namespace Day01
             {
                 Console.WriteLine("**Error**");
                 Console.Read();
-            }*/
-
-            // C4
-            /*Console.Write("Please enter your distance travelled in km:");
+            }
+#endif
+            #endregion
+            #region C4
+#if C4
+            Console.Write("Please enter your distance travelled in km:");
             double temp = Convert.ToDouble(Console.ReadLine());
             double cost;
             double distance = Math.Ceiling(temp * 10) / 10;
@@ -105,22 +123,25 @@ namespace Day01
             {
                 Console.WriteLine("If the distance traveled is {0}km then the total fare is:$2.4 ", distance);
             }
-            else if(distance>0.5 && distance<9)
+            else if (distance > 0.5 && distance < 9)
             {
-                cost = 2.4 + (distance-0.5)/0.1 * 0.04;
+                cost = 2.4 + (distance - 0.5) / 0.1 * 0.04;
                 Console.WriteLine("If the distance traveled is {0}km then the total fare is: ${1} ", distance, $"{cost:0.00}");
-              
+
             }
             else
             {
                 //cost = 2.4 + (distance - 0.5) / 0.1 * 0.04 + (distance - 9) * 0.05;
-                cost = 5.8 + (distance - 9)/0.1 * 0.05;
+                cost = 5.8 + (distance - 9) / 0.1 * 0.05;
                 Console.WriteLine("If the distance traveled is {0}km then the total fare is: ${1} ", distance, $"{cost:0.00}");
-                
+
             }
             Console.ReadLine();
-*/
-            // C5
+            #endif
+            #endregion
+
+            #region C5
+#if C5
             /*Console.WriteLine("Pls input your three-digit integer (100-999): ");
             int num = int.Parse(Console.ReadLine());
             
@@ -135,49 +156,56 @@ namespace Day01
             else
                 Console.WriteLine("False, the number is not an Armstrong number");
             Console.Read();*/
+#endif
+            #endregion
 
 
-
-            // D1
-            /*while (true)
+            #region D1
+#if D1
+            while (true)
             {
                 Console.WriteLine("Pls enter an integer number: ");
                 int num = int.Parse(Console.ReadLine());
                 if (num == 88)
                     break;
             }
-            
+
             Console.WriteLine("Lucky you...");
-            Console.Read();*/
+            Console.Read();
+#endif
+            #endregion
 
 
 
-            // D2
-            /*Console.WriteLine("Pls input 2 numbers(seperate by \",\": ");
+            #region D2
+#if D2
+            Console.WriteLine("Pls input 2 numbers(seperate by \",\": ");
             string[] start = Console.ReadLine().Split(',');
             int[] num = Array.ConvertAll(start, int.Parse);
             int a = num[0];
             int b = num[1];
             int temp;
-            while(a!=b)
-            if (a > b)
-            {
-                temp = a - b;
-                a = temp;
-            }
-            else
-            {
-                temp = b - a;
-                b = temp;
-            }
+            while (a != b)
+                if (a > b)
+                {
+                    temp = a - b;
+                    a = temp;
+                }
+                else
+                {
+                    temp = b - a;
+                    b = temp;
+                }
             int hcf = a;
             int lcm = num[0] * num[1] / hcf;
-            Console.WriteLine("The HCF is {0} and LCM is {1}",hcf,lcm);
-            Console.Read();*/
+            Console.WriteLine("The HCF is {0} and LCM is {1}", hcf, lcm);
+            Console.Read();
+#endif
+            #endregion
 
-
-            // D3a
-            /*int n = 0;
+            #region D3a
+            #if D3a
+            int n = 0;
             Random rnd = new Random();
             int num = rnd.Next(9);
             Console.WriteLine(num);
@@ -188,11 +216,13 @@ namespace Day01
                 n++;
                 if (num == guess)
                 {
-                    Console.WriteLine("congratulations, You have taken {0} times attempts to make the guess.",n);
+                    Console.WriteLine("congratulations, You have taken {0} times attempts to make the guess.", n);
                     break;
                 }
             }
-            Console.ReadLine();*/
+            Console.ReadLine();
+#endif
+            #endregion
 
 
             int n = 0;

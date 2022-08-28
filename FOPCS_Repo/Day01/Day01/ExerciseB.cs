@@ -1,4 +1,12 @@
-﻿using System;
+﻿//#define B1
+#define B2
+//#define B3
+//#define B4
+//#define B5
+//#define B6
+//#define B7_8_9
+//#define B10
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,37 +18,53 @@ namespace Day01
     {
         static void Main(string[] args)
         {
-            // Q1 
+            #region B1
+            #if B1
             Console.Write("Please enter your number:");
             double number1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("square root of the number is: " + $"{Math.Sqrt(number1):#.##}");
-            // Console.ReadLine();
+             Console.ReadLine();
+            #endif
+            #endregion
 
-            // Q2  
+            #region B2
+            #if B2
             Console.WriteLine("square root of the number is: " + $"{Math.Sqrt(number1):0.000}");
-            // Console.ReadLine();
+            Console.ReadLine();
+            #endif
+            #endregion
 
-            // Q3  
+            #region B3
+            #if B3
             Console.Write("Please enter your base salay:");
             int salary = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"{salary * 1.13:#,0.00}");
             Console.ReadLine();
+            #endif
+            #endregion
 
-            // Q4  
+            #region B4
+            #if B4
             Console.Write("Please enter temperature in Centigrade (C):");
             double Centigrade = Convert.ToDouble(Console.ReadLine());
             double Fahrenheit = Centigrade * 1.8 + 32;
             Console.WriteLine($"{Fahrenheit:#}");
             Console.ReadLine();
+            #endif
+            #endregion
 
-            // Q5
+            #region B5
+            #if B5
             Console.Write("Please input the value of x:");
             int x = Convert.ToInt32(Console.ReadLine());
             int y = x * x * 5 - 4 * x + 3;
             Console.WriteLine("output the value of y is:" + y);
             Console.ReadLine();
+            #endif
+            #endregion
 
-            // Q6  
+            #region B6
+            #if B6
             Console.WriteLine("Please input 4 value in sequence (x1,y1,x2,y2): ");
 
             string[] temp = Console.ReadLine().Split(',');
@@ -52,8 +76,11 @@ namespace Day01
 
             Console.WriteLine("The distance between the two points is " + res);
             Console.ReadLine();
+#endif
+            #endregion
 
-            // Q7 + Q8  + Q9 
+            #region B7_8_9
+            #if B7_8_9
             Console.Write("Please enter your distance travelled in km:");
             double distance = Convert.ToDouble(Console.ReadLine());
             if (distance <= 2.4)
@@ -69,8 +96,11 @@ namespace Day01
                 Console.WriteLine("If the distance traveled is {0}km then the total fare is: ${1} ", distance, dis1 / 10);
             }
             Console.ReadLine();
+            #endif
+            #endregion
 
-            /** Q10  **/
+            #region B10
+            #if B10
             Console.WriteLine("Please input the lengths of its three sides a, b and c.: ");
 
             string[] temp2 = Console.ReadLine().Split(',');
@@ -84,6 +114,8 @@ namespace Day01
             else
                 Console.WriteLine("Those input 3 side length cannot form a triangle");
             Console.Read();
+            #endif
+            #endregion
         }
     }
 }
