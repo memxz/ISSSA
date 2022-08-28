@@ -1,5 +1,5 @@
 ﻿//#define B1
-#define B2
+//#define B2
 //#define B3
 //#define B4
 //#define B5
@@ -19,7 +19,7 @@ namespace Day01
         static void Main(string[] args)
         {
             #region B1
-            #if B1
+            #if B1 || B2
             Console.Write("Please enter your number:");
             double number1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("square root of the number is: " + $"{Math.Sqrt(number1):#.##}");
