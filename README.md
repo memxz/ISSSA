@@ -22,8 +22,7 @@
   5. Write a program that takes a double precision number as input and prints the number with 2 decimal points in the output.   
 
 ### Exercise B (Day2)
-
-
-
-
-
+### Exercise C
+### Exercise D
+### Exercise E
+### Exercise F
