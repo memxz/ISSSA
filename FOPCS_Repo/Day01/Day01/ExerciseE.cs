@@ -1,8 +1,8 @@
 ﻿//#define E1
-#define E2
+//#define E2
 //#define E3
 //#define E4
-//#define E5
+#define E5
 //#define E6
 //#define F5
 //#define E10
@@ -155,22 +155,23 @@ namespace Day01
            
             for (int n = 5; n <= 10000; n++)
             {
-                int a = 0;
+                int ab = 0;
                 for (int i = 1; i <= n; i++)
                 {
                     if (n % i == 0)
                     {
-                        a++;
+                        ab++;
                     }
                 }
-                if (a == 2)
-                {
+                if (ab == 2)
+                { 
                     Console.WriteLine("{0} is a Prime Number", n);
                 }
                 else
                 {
                     Console.WriteLine("{0} Not a Prime Number",n);
                 }
+                
             }
             
             Console.ReadLine();

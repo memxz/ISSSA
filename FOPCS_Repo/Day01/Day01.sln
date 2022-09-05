@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32630.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01", "Day01\Day01.csproj", "{0DE9B9F5-F13B-47E4-AACF-5747C21EC4D2}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop_Exceptions", "Workshop_Exceptions\Workshop_Exceptions.csproj", "{BF96A8A2-1D8E-4143-8026-69E235D84E4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop_ExcPropagation", "ExcPropagation\Workshop_ExcPropagation.csproj", "{2D609A84-2151-4F68-A8AE-945A93135C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinklistImp", "LinklistImp\LinklistImp.csproj", "{B9B2478B-66ED-49F7-BA7C-E9B5F2C94C12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{2D609A84-2151-4F68-A8AE-945A93135C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D609A84-2151-4F68-A8AE-945A93135C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D609A84-2151-4F68-A8AE-945A93135C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B2478B-66ED-49F7-BA7C-E9B5F2C94C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B2478B-66ED-49F7-BA7C-E9B5F2C94C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B2478B-66ED-49F7-BA7C-E9B5F2C94C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B2478B-66ED-49F7-BA7C-E9B5F2C94C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

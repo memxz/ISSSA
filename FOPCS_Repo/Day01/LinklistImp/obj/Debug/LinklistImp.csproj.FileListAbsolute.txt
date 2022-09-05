@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\obj\Debug\LinklistImp.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\obj\Debug\LinklistImp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\obj\Debug\LinklistImp.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\bin\Debug\LinklistImp.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\bin\Debug\LinklistImp.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\bin\Debug\LinklistImp.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\obj\Debug\LinklistImp.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\LinklistImp\obj\Debug\LinklistImp.pdb
