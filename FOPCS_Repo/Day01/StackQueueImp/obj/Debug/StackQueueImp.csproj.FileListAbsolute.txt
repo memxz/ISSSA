@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\obj\Debug\StackQueueImp.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\obj\Debug\StackQueueImp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\obj\Debug\StackQueueImp.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\bin\Debug\StackQueueImp.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\bin\Debug\StackQueueImp.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\bin\Debug\StackQueueImp.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\obj\Debug\StackQueueImp.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\StackQueueImp\obj\Debug\StackQueueImp.pdb
