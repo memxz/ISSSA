@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\bin\Debug\MiniCA.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\bin\Debug\MiniCA.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\bin\Debug\MiniCA.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\obj\Debug\MiniCA.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\obj\Debug\MiniCA.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\obj\Debug\MiniCA.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\obj\Debug\MiniCA.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\MiniCA\obj\Debug\MiniCA.pdb

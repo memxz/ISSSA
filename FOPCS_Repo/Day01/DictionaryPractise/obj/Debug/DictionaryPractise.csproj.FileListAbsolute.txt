@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\obj\Debug\DictionaryPractise.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\obj\Debug\DictionaryPractise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\obj\Debug\DictionaryPractise.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\bin\Debug\DictionaryPractise.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\bin\Debug\DictionaryPractise.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\bin\Debug\DictionaryPractise.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\obj\Debug\DictionaryPractise.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\DictionaryPractise\obj\Debug\DictionaryPractise.pdb

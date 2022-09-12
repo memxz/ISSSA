@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\bin\Debug\TrieSearch.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\bin\Debug\TrieSearch.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\bin\Debug\TrieSearch.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\obj\Debug\TrieSearch.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\obj\Debug\TrieSearch.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\obj\Debug\TrieSearch.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\obj\Debug\TrieSearch.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\TrieSearch\obj\Debug\TrieSearch.pdb
