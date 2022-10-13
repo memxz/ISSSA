@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{17F6798B-A22A-44B5-804F-1BC923EA2403}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Program.cs" Line="26" Column="33" />
+      <File FileName="Middlewares/CycleTimer.cs" Line="2" Column="32" />
+      <File FileName="Models/MockData.cs" Line="17" Column="43" />
+      <File FileName="Models/ResponseStat.cs" Line="5" Column="1" />
+      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="6" Column="10" />
+      <File FileName="Views/Home/Read.cshtml" Line="4" Column="27" />
+      <File FileName="Views/Home/Write.cshtml" Line="5" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="25" Column="46" />
+      <File FileName="Controllers/HomeController.cs" Line="22" Column="55" />
+      <File FileName="wwwroot/css/site.css" Line="16" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AvgResponseTime_net6" expanded="True">
+            <Node name="AvgResponseTime_net6" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middlewares" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AvgResponseTime__net6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Track";
+}
+
+<h2>Track</h2>
+
+<form method="post">
+    <div class="form-group row">
+        <label class="col-sm-2">Username</label>
+        <div class="col-sm-1">@ViewData["username"]</div>
+        <div class="col-sm-9">
+            <button type="submit" formaction="Logout">Logout</button>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2">Click me</label>
+        <div class="col-sm-10">
+            <button type="submit" formaction="Track?clickedBtn=0">0</button>
+            <button type="submit" formaction="Track?clickedBtn=1">1</button>
+            <button type="submit" formaction="Track?clickedBtn=2">2</button>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2">Click History</label>
+        <div class="col-sm-10">@ViewData["Click"]</div>
+    </div>
+</form>
+

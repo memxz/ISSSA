@@ -1,0 +1,7 @@
+C:\Users\issntt\source\repos\LinqWorkshopSolution\bin\Debug\LinqWorkshopSolution.exe.config
+C:\Users\issntt\source\repos\LinqWorkshopSolution\bin\Debug\LinqWorkshopSolution.exe
+C:\Users\issntt\source\repos\LinqWorkshopSolution\bin\Debug\LinqWorkshopSolution.pdb
+C:\Users\issntt\source\repos\LinqWorkshopSolution\obj\Debug\LinqWorkshopSolution.csprojAssemblyReference.cache
+C:\Users\issntt\source\repos\LinqWorkshopSolution\obj\Debug\LinqWorkshopSolution.csproj.CoreCompileInputs.cache
+C:\Users\issntt\source\repos\LinqWorkshopSolution\obj\Debug\LinqWorkshopSolution.exe
+C:\Users\issntt\source\repos\LinqWorkshopSolution\obj\Debug\LinqWorkshopSolution.pdb

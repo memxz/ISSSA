@@ -1,0 +1,73 @@
+﻿<Properties StartupConfiguration="{03EC3BEB-970F-4298-A89A-B19EA88B7E3E}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DigiShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SQL Query.txt">
+    <Files>
+      <File FileName="DigiShop/Controllers/HomeController.cs" Line="24" Column="1" />
+      <File FileName="DigiShop/Data/ProductData.cs" Line="46" Column="60" />
+      <File FileName="DigiShop/Models/Product.cs" Line="10" Column="41" />
+      <File FileName="DigiShop/Data/Data.cs" Line="5" Column="160" />
+      <File FileName="DigiShop/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="DigiShop/Controllers/ProductController.cs" Line="17" Column="12" />
+      <File FileName="DigiShop/Views/Product/Index.cshtml" Line="18" Column="5" />
+      <File FileName="DigiShop/Program.cs" Line="25" Column="56" />
+      <File FileName="DigiShop/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="DigiShop/Views/Home/Index.cshtml" Line="23" Column="33" />
+      <File FileName="DigiShop/Views/Home/Privacy.cshtml" Line="1" Column="1" />
+      <File FileName="DigiShop/appsettings.json" Line="1" Column="1" />
+      <File FileName="DigiShop/wwwroot/css/site.css" Line="1" Column="1" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap.css" Line="6735" Column="3" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" Line="62" Column="10" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" Line="51" Column="10" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" Line="46" Column="10" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" Line="1" Column="1" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" Line="6" Column="4089" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" Line="366" Column="2" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" Line="6710" Column="2" />
+      <File FileName="DigiShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" Line="6" Column="113482" />
+      <File FileName="DigiShop/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="DigiShop/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="DigiShop/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="DigiShop/Views/Search/Index.cshtml" Line="122" Column="33" />
+      <File FileName="DigiShop/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="DigiShop/Controllers/SearchController.cs" Line="21" Column="79" />
+      <File FileName="DigiShop/Views/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="DigiShop/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="SQL Query.txt" Line="4" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DigiShop" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="DigiShop" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Product" expanded="True" />
+                <Node name="Search" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

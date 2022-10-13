@@ -1,0 +1,8 @@
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\bin\Debug\WaySum.exe.config
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\bin\Debug\WaySum.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\bin\Debug\WaySum.pdb
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\obj\Debug\WaySum.csproj.AssemblyReference.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\obj\Debug\WaySum.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\obj\Debug\WaySum.csproj.CoreCompileInputs.cache
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\obj\Debug\WaySum.exe
+C:\Users\Cyrus\WorkRepo\ISSSA\FOPCS_Repo\Day01\WaySum\obj\Debug\WaySum.pdb

@@ -1,0 +1,157 @@
+﻿
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand mb-0 h1">
+            <img class="d-inline-block"
+                 src="https://aidn-inla.be/content/uploads/2015/12/nus-logo-225x154.png"
+                 width="70" height="50" />
+            DigiShop
+        </a>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a href="https://localhost:7073/"
+                       class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#"
+                       class="nav-link">
+                        Login
+                    </a>
+                </li>
+
+                <li class="fixed-right nav-item active">
+                    <a href="#"
+                       class="nav-link">
+                        My Purchases
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" asp-controller="Product" asp-action="ViewCart" asp-route-id="">
+                    <span>
+                         <img class="d-inline-block align-top"
+                                 src="/images/shoppingCart.png"
+                                 width="20" height="20" />
+                    </span>
+                    <span class="badge badge-pill bg-danger">
+                        0
+                    </span>
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Enter Product Name" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+    <style>
+        body {
+            margin: 1px;
+        }
+
+        .my-row {
+            border: 1px solid white;
+            height: 350px
+        }
+
+        .my-col {
+            border: 1px solid white;
+        }
+    </style>
+
+
+
+    <div class="container my-container position-absolute top-50 start-50 translate-middle">
+        <div class="row justify-content-center my-row">
+
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                    
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/ChartNET.png" width="200" height="170" />
+                        <h5 class="card-title">.NET Charts</h5>
+                        <p class="card-text">Brings powerful charting capabilities to your .NET applications.</p>
+                        <a class="btn btn-dark align-content-center" asp-controller="Product" asp-action="AddToCart" asp-route-id="1">$99 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/Paypal.png" width="200" height="170" />
+                        <h5 class="card-title">.NET PayPal</h5>
+                        <p class="card-text">Integrate your .NET apps with Paypal the easy way!</p> <br />
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="AddToCart" asp-route-id="2">$69 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/ML.png" width="170" height="170" />
+                        <h5 class="card-title">.NET ML</h5>
+                        <p class="card-text">Supercharged .NET machine learning libraries.</p> <br />
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="AddToCart" asp-route-id="3">$299 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row justify-content-center my-row">
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/Analytics.png" width="170" height="170" />
+                        <h5 class="card-title">.NET Analytics</h5>
+                        <p class="card-text">Performs data mining and analytics easily in .NET.</p> <br />
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="AddToCart" asp-route-id="4">$299 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/Logger.png" width="170" height="170" />
+                        <h5 class="card-title">.NET Logger</h5>
+                        <p class="card-text">Logs and aggregates events easily in your .NET apps.</p> <br />
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="AddToCart" asp-route-id="5">$49 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-col col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="d-inline-block rounded mx-auto d-block" src="/images/Math.png" width="170" height="170" />
+                        <h5 class="card-title">.NET Numerics</h5>
+                        <p class="card-text">Powerful numerical methods for your .NET simulations.</p>
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="AddToCart" asp-route-id="6">$199 - Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

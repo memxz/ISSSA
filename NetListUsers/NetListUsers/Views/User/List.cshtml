@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "List Users";
+    string searchStr = (string)ViewData["searchStr"];
+    // accept list of users from controller
+    List<Person> persons = (List<Person>)ViewData["persons"];
+}
+<form action="/List/" method="post">
+    Search:
+    <input name="searchStr" value="@searchStr" />
+</form>
+<br/>
+@if (persons.Count == 0) {
+    @:There are no matches.
+}
+else {
+<table>
+    <tr class="even_row">
+        <th>Name</th>
+        <th>Job Title</th>
+        <th>Years of Experience</th>
+    </tr>
+
+    @{
+        int row = 1; 
+            @* first row (odd) will not be highlighted *@
+
+            foreach (Person person in persons)
+            {
+                string row_color = (row % 2 == 0) ? "class=even_row" : "";
+
+                string firstname = Highlight(searchStr, person.FirstName);
+                string lastname = Highlight(searchStr, person.LastName);
+                string jobtitle = Highlight(searchStr, person.JobTitle);
+
+                <tr @row_color>
+                    <td>@Html.Raw(firstname) @Html.Raw(lastname)</td>
+                    <td>@Html.Raw(jobtitle)</td>
+                    <td>@person.YearsExperience</td>
+                </tr>
+
+                row += 1;
+            }
+        }
+</table>
+}
+@functions {
+    public string Highlight(string searchStr, string subject) {
+        if (searchStr == null) {
+            return subject;
+        }
+
+        int pos = subject.ToLower().IndexOf(searchStr.ToLower());
+        if (pos == -1) {
+            return subject;
+        }
+
+        if (pos == 0) {
+            return "<span class='hilite'>" + subject.Substring(0, searchStr.Length) +
+                "</span>" + subject.Substring(searchStr.Length);
+        }
+        else {
+            return subject.Substring(0, pos) +
+                "<span class='hilite'>" + subject.Substring(pos, searchStr.Length) +
+                "</span>" + subject.Substring(pos + searchStr.Length);
+        }
+    }
+} 

@@ -1,0 +1,22 @@
+﻿CREATE DATABASE DigiShop
+GO
+
+USE DigiShop
+GO
+
+CREATE TABLE [dbo].[products] (
+   [productId]   INT NOT NULL,
+   [productName]  NVARCHAR (MAX)   NULL,
+   [productPrice] DECIMAL(10,2)  NULL,
+   [productDesc]  NVARCHAR (MAX)   NULL,
+   [productIMG] NVARCHAR(MAX) NULL
+);
+ 
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (01,'.NET Charts', 99, 'Brings powerful charting capabilities to your .NET applications.','/images/ChartNET.png');
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (02,'.NET PayPal', 69, 'Integrate your .NET apps with Paypal the easy way!','/images/Paypal.png');
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (03,'.NET ML', 299, 'Supercharged .NET machine learning libraries.','/images/ML.png');
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (04,'.NET Analytics', 99, 'Performs data mining and analytics easily in .NET.','/images/Analytics.png');
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (05,'.NET Logger', 49, 'Logs and aggregates events easily in your .NET apps.','/images/Logger.png');
+INSERT INTO products (ProductID, ProductName, ProductPrice, ProductDesc, productIMG) VALUES (06,'.NET Numerics', 199, 'Powerful numerical methods for your .NET simulations.','/images/Math.png');
+
+

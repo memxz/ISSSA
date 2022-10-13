@@ -1,0 +1,27 @@
+﻿@{
+    @* setup menu-highlight *@
+    ViewData["menu_stats"] = "menu_hilite";
+    ViewData["menu_read"] = "";
+    ViewData["menu_write"] = "";
+
+    double read_dur = (double) ViewData["read_dur"];
+    double write_dur = (double) ViewData["write_dur"];
+
+    @* display stats for database read *@
+    if (read_dur == -1.0) {
+        @:No mock database reads found.
+    } else {
+        @:Read avg response time: <b>@ViewData["read_dur"]</b> secs.
+    }
+    
+    <br />
+
+    // display stats for database write
+    if (write_dur == -1.0) {
+        @:No mock database writes found.
+    }
+    else {
+        @:Write avg response time: <b>@ViewData["write_dur"]</b> secs.
+    }
+}
+

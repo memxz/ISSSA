@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{37DEC968-8582-46A6-AA07-2600264A28B0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="37" Column="3" />
+      <File FileName="Models/Course.cs" Line="9" Column="12" />
+      <File FileName="Models/Class.cs" Line="17" Column="2" />
+      <File FileName="Models/Lecturer.cs" Line="8" Column="12" />
+      <File FileName="Models/Room.cs" Line="15" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EntityFrameworkDemo" expanded="True">
+            <Node name="EntityFrameworkDemo" expanded="True">
+              <Node name="DB" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EntityFrameworkDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

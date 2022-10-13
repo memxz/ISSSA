@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{10279AFA-83E6-4C44-A92A-9CA6608A6B2D}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="11" Column="22" />
+      <File FileName="DB/MyDbContext.cs" Line="8" Column="37" />
+      <File FileName="Models/Class.cs" Line="14" Column="1" />
+      <File FileName="Models/Course.cs" Line="9" Column="6" />
+      <File FileName="Models/Lecturer.cs" Line="16" Column="1" />
+      <File FileName="Models/Room.cs" Line="19" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EF_Institution" expanded="True">
+            <Node name="EF_Institution" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="DB" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EF__Institution PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

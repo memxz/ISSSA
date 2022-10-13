@@ -1,0 +1,46 @@
+﻿@{
+   ViewData["Title"] = "Home Page";
+}
+
+@{
+   var courses = (List<Course>) ViewData["courses"];
+}
+
+
+<table>
+   <tr>
+      <th>Course Code</th>
+      <th>Name</th>
+      <th>Actions</th>
+   </tr>
+
+   @foreach (var course in courses)
+   {
+      <tr>
+         <td>@course.Code</td>
+         <td>@course.Name</td>
+         <td id="@course.ID">
+            @Html.ActionLink("Details", "CourseDetails", "Course",
+                new { courseId = course.ID }, null)
+         </td>
+      </tr>
+   }
+</table>
+<table>
+ @foreach (var course in courses)
+   {
+        <tr>
+            <th>Course</th>
+            <td>@course.Name</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>@course.Code</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>@course.Description</td>
+        </tr>
+   }
+
+</table>

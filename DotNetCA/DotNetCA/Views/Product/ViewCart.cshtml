@@ -1,0 +1,55 @@
+﻿@using System.Linq
+@model Cart
+
+
+@{
+    ViewData["Title"] = "Cart Overview";
+}
+
+@if ((List<Cart>)ViewData["viewCart"]!=null)
+{
+    <table class="table">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th></th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        @{
+            var grouped = ((List<Cart>)ViewData["viewCart"]).GroupBy(i => i.Product.productId).Select(i => new { id = i.Key, Total = i.Sum(item => item.quantity), subTotal=i.Sum(item=>item.Product.ProductPrice) });
+            foreach (var item in grouped)
+            {
+                //int total = (int)item.Product.ProductPrice * item.quantity;
+                
+                <tr>
+                        <td>@item.id</td>
+                        <td>@item.Total</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="AddToCart" asp-route-id="@item.id">+</a>
+                            <a class="btn btn-info btn-sm" asp-action="RemoveCart" asp-route-id="@item.id">-</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Remove" asp-route-id="@item.id">Remove</a>
+                        </td>
+                        <td>@item.subTotal.ToString("C2")</td>
+                        <td>@item.subTotal</td>
+                    </tr>
+            }
+            <tr>
+                <td class="text-right" colspan="4">Grand Total: @ViewData["Grandtotal"]</td>
+            </tr>
+            <tr>
+                <td class="text-right" colspan="4">
+                    <a class="btn btn-danger" asp-action="Clear">Clear Cart</a>
+                    <a class="btn btn-primary" href="#">Checkout</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+}
+else
+{
+    <h3 class="display-4 text-center">Your cart is empty.</h3>
+}
+

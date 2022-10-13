@@ -1,0 +1,26 @@
+CREATE DATABASE SessionDemoDB
+GO
+
+USE SessionDemoDB
+GO
+
+CREATE TABLE [dbo].[User] (
+    [UserId]   UNIQUEIDENTIFIER NOT NULL,
+    [Username] VARCHAR (100)    NOT NULL,
+    [Password] VARCHAR (100)    NOT NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([UserId] ASC))
+GO
+
+CREATE TABLE [dbo].[Session] (
+    [SessionId] UNIQUEIDENTIFIER NOT NULL,
+    [UserId]    UNIQUEIDENTIFIER NOT NULL,
+    [Timestamp] BIGINT           NOT NULL,
+    CONSTRAINT [PK_Session] PRIMARY KEY CLUSTERED ([SessionId] ASC),
+    CONSTRAINT [FK_1] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([UserId]))
+GO
+
+INSERT INTO dbo.[User] (UserId,Username,Password) VALUES
+    (N'092492EB-8705-4337-92A5-05D2BF57BB82',N'john',N'john'),
+	(N'701E9950-BB68-4EFA-86C5-2C4408E8EC27',N'mary',N'mary'),
+	(N'1E94AF16-1C90-4250-B3C4-684083D24A1A',N'peter',N'peter')
+
