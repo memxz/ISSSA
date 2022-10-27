@@ -18,6 +18,10 @@ namespace DigiShop.Controllers
 
         public IActionResult Index()
         {
+            if (Request.Cookies["SessionId"] == null)
+            {
+                return RedirectToAction("Index", "Product");
+            }
             List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart") ?? new List<CartItem>();
 
             CartViewModel cartVM = new()

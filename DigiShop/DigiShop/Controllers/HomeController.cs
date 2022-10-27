@@ -16,7 +16,20 @@ namespace DigiShop.Controllers
 
         public IActionResult Index()
         {
-            
+
+            /*if (Request.Cookies["SessionId"] == null)
+            {
+                return RedirectToAction("Index", "Product");
+            }
+
+           // User user = db.GetUserBySession(Request.Cookies["SessionId"]);
+            if (user == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
+            ViewData["username"] = user.Username;*/
+
             return View();
         }
 
