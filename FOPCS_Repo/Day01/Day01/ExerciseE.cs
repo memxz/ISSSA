@@ -2,8 +2,9 @@
 //#define E2
 //#define E3
 //#define E4
-#define E5
+//#define E5
 //#define E6
+#define F1
 //#define F5
 //#define E10
 using System;
@@ -189,7 +190,7 @@ namespace Day01
             Console.WriteLine("                   Perfect Number                              ");
             Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("print out all the perfect numbers from 1 to 1000");
-            for(number = 1; number <= 900; number++)
+            for(number = 1; number <= 1000; number++)
             {
                 int sum = 0;
                 for (int i = 1; i < number; i++)
@@ -253,13 +254,80 @@ namespace Day01
                     Console.WriteLine("For marks = {0}, name = {1}.",marks[k], value);
                 }
             }
-            Console.WriteLine(names.Length);
+            Console.WriteLine("\nsorted on student names alphabetically\n");
+            for(int m=0; m < names.Length-1; m++)
+            {
+               for(int l=0; l < 4; l++)
+                {
+                    if (names[l].First() > names[l+1].First())
+                    {
+                        string tp=names[l];
+                        names[l] = names[l+1];
+                        names[l+1] = tp;
+                    }
+                }
+            }
+            for (int k = 0; k < 5; k++)
+            {
+                    Console.WriteLine("For marks = {0}, name = {1}.", names[k], student.FirstOrDefault(x => x.Value == names[k]).Key);
+                
+            }
             Console.Read();
 
 
         }
-        #endif
+#endif
         #endregion
 
+        #region F1
+        #if F1
+        public static void checkVowels(string input)
+        {
+            Dictionary<char, int> vowels = new Dictionary<char, int>()
+            {
+                {'a',0 },
+                {'e',0 },
+                {'i',0 },
+                {'o',0 },
+                {'u',0 }
+
+
+
+            };
+            for(int i = 0; i < input.Length; i++)
+            {
+                if(input[i] == 'a')
+                {
+                    vowels['a']++;
+                }
+                if (input[i] == 'e')
+                {
+                    vowels['e']++;
+                }
+                if (input[i] == 'i')
+                {
+                    vowels['i']++;
+                }
+                if (input[i] == 'o')
+                {
+                    vowels['o']++;
+                }
+                if (input[i] == 'u')
+                {
+                    vowels['u']++;
+                }
+            }
+            Console.WriteLine("number of a : {0}\nnumber of e : {1}\nnumber of i : {2}\nnumber of o: {3}\nnumber of u : {4}", vowels['a'], vowels['e'], vowels['i'], vowels['o'], vowels['u']);
+            Console.Read();
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("pls enter phrase");
+            string input = Console.ReadLine().ToLower();
+            checkVowels(input);
+        }
+
+        #endif
+        #endregion
     }
 }

@@ -228,11 +228,12 @@ namespace Day01
 
             #region D3b
 #if D3b
-            find:
-            int n = 0;
+            
             Random rnd = new Random();
             int num = rnd.Next(9);
             Console.WriteLine(num);
+            find:
+            int n = 0;
             while (true)
             {
                 Console.WriteLine("Pls enter the number which you guess: ");
