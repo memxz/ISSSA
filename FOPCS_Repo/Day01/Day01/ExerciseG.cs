@@ -1,149 +1,133 @@
 ﻿//#define G1
-#define G2
-//#define G3
-//#define G4
-//#define G5
-//#define G6
-//#define G5
-//#define G10
+//#define G2
+#define G3
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Day01
 {
     class ExerciseG
     {
-        static void showSort(int[] arr)
-        {
-            int len = arr.Length;
-            int maxIndex,temp;
-            int[,] newArray = new int[(len - 1),len];
-            for (int i = 0; i < len - 1; i++)
-            {
-                maxIndex = i;
-                for (int j = i + 1; j < len; j++)
-                {
-                    if (arr[j] > arr[maxIndex])
-                    {
-                        maxIndex = j;
-                    }
-                    temp = arr[i];
-                    arr[i] = arr[maxIndex];
-                    arr[maxIndex] = temp;
-                    newArray[i, j - 1] = arr[maxIndex];
-
-
-                }
-                
-
-            }
-            for (int i = 0; i < len - 1; i++)
-            {
-                for (int j = 0; j < len; j++)
-                {
-                    Console.Write(newArray[i, j]);
-                }
-            }
-            Console.WriteLine();
-        }
-
-        static int[] selectionSort(int[] arr)
-        {
-            int len = arr.Length;
-            int maxIndex, temp;
-            for (int i = 0; i < len - 1; i++)
-            {
-                maxIndex = i;
-                for (int j = i + 1; j < len; j++)
-                {
-                    if (arr[j] > arr[maxIndex])
-                    {    
-                        maxIndex = j;                
-                    }
-                }
-                temp = arr[i];
-                arr[i] = arr[maxIndex];
-                arr[maxIndex] = temp;
-
-            }
-            return arr;
-        }
-        static void Main(string[] args)
-        {
         #region G1
-        #if G1
-            Console.Write("Pls enter 12 month Sales Day in suquense(seperate by comma): ");
-            string[] input = Console.ReadLine().Split(',');
-            int n = 0;
-            double[] data = new double[12];
-            //double temp;
-            double max=data[0];
-            double sum=0;
-            while (n < 12)
-            {
-                data[n] = Convert.ToDouble(input[n]);
-                n++;
+#if G1
+        public static void Main(string[] args)
+        {
 
-            }
-            double min = data[0];
-            foreach (double e in data)
-            {
-                if (min > e)
-                {
-                    min = e;
-                }
-                if (max < e)
-                {
-                    max = e;
-                }
-                sum = sum + e;
-            }
-            for (int i = 0; i < input.Length-1; i++)
-            {
-                for (int j = i + 1; j < input.Length; j++)
-                {
-
-                    if (data[i] > data[j])
-                    {
-                        temp = data[j];
-                        data[j] = data[i];
-                        data[i] = temp;
-                    }
-                }
-            } 
-
-            Console.WriteLine("Minimum Sales: "+min);
-            Console.WriteLine("Maximum Sales: "+max);
-            Console.WriteLine("total Sales {0} and average sales {1}: " ,sum,sum/12);
+            //initiaize 12 month sales
+            int[] sales = { 1000, 1300, 1200, 1100, 2000, 2300, 2200, 1000, 3000, 2000, 3400, 3000 };
+            
+            Console.WriteLine("Minimum Sales: "+ (Array.IndexOf(sales,sales.Min())+1));
+            Console.WriteLine("Maximum Sales: "+(Array.IndexOf(sales, sales.Max())+1));
+            Console.WriteLine("total Sales {0} and average sales {1}: " ,sales.Sum(),sales.Average());
             Console.ReadKey();
-
-        #endif
+        }
+#endif
         #endregion
         #region G2
-        #if G2
-            Console.Write("Pls enter numbers (seperate by comma): ");
-            string[] input = Console.ReadLine().Split(',');
-            int[] data = new int[input.Length];
-            int n = 0;
-            while (n < input.Length)
+#if G2
+        public static void quickSort(int[] arr)
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                data[n] = Convert.ToInt32(input[n]);
-                n++;
+                int min_idx = i;
+
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[j] < arr[min_idx])
+                    {
+                        // remember seen min
+                        min_idx = j;
+                    }
+                }
+
+                if (min_idx != i)
+                {
+                    // swap the two
+                    int tmp = arr[i];
+                    arr[i] = arr[min_idx];
+                    arr[min_idx] = tmp;
+
+                    foreach(int j in arr)
+                    {
+                        Console.Write(j);
+                    }
+
+                    Console.WriteLine();
+                }
             }
-            showSort(data);
-           
-            selectionSort(data);
-            foreach (int e in data)
-            {
-                Console.Write(e);
-            }
+        }
+        public static void Main(string[] args)
+        {
+            int[] arr = { 1, 3, 5, 4, 2, 6, 7, 3, 9, 22 };
+            quickSort(arr);
 
             Console.Read();
-        #endif
-        #endregion
+
         }
+#endif
+        #endregion
+
+        #region G3
+#if G3
+        public static void Main(string[] args)
+        {
+            int[,] student = new int[,]
+        {
+            {56, 84, 68, 29 },
+            {94, 73, 31, 96 },
+            {41, 63, 36, 90 },
+            {99, 9,  18, 17 },
+            {62, 3,  65, 75 },
+            {40, 96, 53, 23 },
+            {81, 15, 27, 30 },
+            {21, 70, 100, 2 },
+            {88, 50, 13, 12 },
+            {48, 54, 52, 78 },
+            {64, 71, 67, 25 },
+            {16, 93, 46, 72 }
+        };
+            //Compute the total marks obtained each student
+            int[] total = new int[12];
+            int [] total2 = new int[4];
+            for(int i=0; i<total.Length; i++)
+            {
+                for (int j = 0; j < student.GetLength(1); j++)
+                {
+                    total[i]+= student[i, j];
+                }
+            }
+            foreach(int el in total)
+            {
+                Console.WriteLine("total mark {0} for student",el);
+            }
+            
+            for(int i=0;i<student.GetLength(1); i++)    
+            {
+                for(int j=0; j<student.GetLength(0); j++)
+                {
+                    total2[i]+= student[j, i];
+                }
+
+            }
+            //Cmpute the class average (and standard deviation*optional) of Marks for each ubject.
+            foreach (int el in total2)
+            {
+                Console.WriteLine("average subject markt: " + el / 12);
+            }
+            Console.Read();
+        }
+
+
+
+
+
+#endif
+        #endregion
+
     }
 }

@@ -4,12 +4,19 @@
 //#define E4
 //#define E5
 //#define E6
-#define F1
-//#define F5
+//#define F1
+//#define F2
+//#define F3
+//#define F4
+//#define F6
+#define F5
 //#define E10
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,7 +25,7 @@ namespace Day01
     class ExerciseE
     {
         #region E1 recursive
-        #if E1
+#if E1
         static int factorial(int n)
         {
             if (n == 1 || n==0)
@@ -35,11 +42,11 @@ namespace Day01
                 Console.WriteLine(factorial(num));
             Console.Read();       
         }
-        #endif
+#endif
         #endregion
 
         #region E1 Increament
-        #if E1
+#if E1
         static void Main(string[] args)
         {
             int fact=1;
@@ -52,10 +59,10 @@ namespace Day01
             Console.WriteLine(fact);
             Console.Read();
         }
-        #endif
+#endif
         #endregion
         #region E1 Decreament
-        #if E1
+#if E1
         static void Main(string[] args)
         {
             int fact = 1;
@@ -68,10 +75,10 @@ namespace Day01
             Console.WriteLine(fact);
             Console.Read();
         }
-        #endif
+#endif
         #endregion
         #region E2
-        #if E2
+#if E2
         static void Main(string[] args)
         {
             Console.WriteLine("NO\tINVERSE\tSQUAREROOT\tSQUARE");
@@ -84,10 +91,10 @@ namespace Day01
 
             Console.Read();
         }
-        #endif
+#endif
         #endregion
         #region E3
-        #if E3
+#if E3
         static void Main(string[] args)
         {
             Console.WriteLine("Pls input an integer number: ");
@@ -110,11 +117,11 @@ namespace Day01
             }
             Console.ReadLine();
         }
-        #endif
+#endif
         #endregion
 
         #region E4
-        #if E4
+#if E4
         static void Main(string[] args)
         {
             int number, sum = 0;
@@ -146,10 +153,10 @@ namespace Day01
             Console.WriteLine("---------------------------------------------------------------");
             Console.ReadKey();
         }
-        #endif
+#endif
         #endregion
         #region E5
-        #if E5
+#if E5
         static void Main(string[] args)
         {
             Console.WriteLine("prime numbers from 5 to 10000 ");
@@ -177,11 +184,11 @@ namespace Day01
             
             Console.ReadLine();
         }
-        #endif
+#endif
         #endregion
 
         #region E6
-        #if E6
+#if E6
         static void Main(string[] args)
         {
             int number;
@@ -213,11 +220,11 @@ namespace Day01
             Console.WriteLine("---------------------------------------------------------------");
             Console.ReadKey();
         }
-        #endif
+#endif
         #endregion
 
         #region F5
-        #if F5
+#if F5
         static void Main(string[] args)
         {
             string[] names = new string[] { "john", "Venkat", "Mary", "Victor", "Betty" };
@@ -269,7 +276,7 @@ namespace Day01
             }
             for (int k = 0; k < 5; k++)
             {
-                    Console.WriteLine("For marks = {0}, name = {1}.", names[k], student.FirstOrDefault(x => x.Value == names[k]).Key);
+                    Console.WriteLine("For name = {0}, marks = {1}.", names[k], student.FirstOrDefault(x => x.Value == names[k]).Key);
                 
             }
             Console.Read();
@@ -280,7 +287,7 @@ namespace Day01
         #endregion
 
         #region F1
-        #if F1
+#if F1
         public static void checkVowels(string input)
         {
             Dictionary<char, int> vowels = new Dictionary<char, int>()
@@ -327,6 +334,151 @@ namespace Day01
             checkVowels(input);
         }
 
+#endif
+        #endregion
+
+        #region F2
+#if F2
+        public static bool isPalindrome(string input)
+        {
+            int len=input.Length;
+            if (len % 2 == 0)
+            {
+                for (int i= 0; i <= len/2; i++)
+                {
+                    if (input[i] != input[len - i - 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < (len + 1) / 2; i++)
+                {
+                    if (input[i] != input[len - i - 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public static void Main(string[] args)
+        {
+            Console.Write("pls enter string: ");
+            string input = Console.ReadLine();
+            Console.WriteLine("{0}", isPalindrome(input)?true:false);
+            Console.Read();
+
+        }
+#endif
+        #endregion
+
+        #region F3
+#if F3
+        public static bool isPalindrome(string input)
+        {
+            int len = input.Length;
+            if (len % 2 == 0)
+            {
+                for (int i = 0; i <= len / 2; i++)
+                {
+                    if (input[i] != input[len - i - 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < (len + 1) / 2; i++)
+                {
+                    if (input[i] != input[len - i - 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public static void Main(string[] args)
+        {
+            Console.Write("pls enter string: ");
+            string input = Console.ReadLine().Replace(" ","").ToLower();
+            Console.WriteLine("{0}", isPalindrome(input) ? true : false);
+            Console.Read();
+
+        }
+#endif
+        #endregion
+
+
+        #region F4
+#if F4
+        public static void Main(string[] args)
+        {
+            string input = "institute of systems science";
+            string[] newInput = input.Split(' ');
+            foreach (string arg in newInput)
+            {
+                Console.Write(arg.ToUpper().FirstOrDefault()+arg.Substring(1)+" ");
+            }
+            Console.ReadLine();
+
+        }
+
+
+#endif
+        #endregion
+
+        #region F6
+        #if F6
+        public static bool isValidmatriNo(string input)
+        {
+            Dictionary<int, string> result = new Dictionary<int, string>() {
+                {0,"O" },
+                {1,"P" },
+                {2,"Q" },
+                {3,"R" },
+                {4,"S" },
+                {5,"Q" }
+            };
+            //Convert the entire string to uppercase so that we don’t have to worry about case
+            string inputUpper=input.ToUpper();
+            //Check that the length of the input is exactly 7 characters, otherwise it’s invalid
+            if (inputUpper.Length != 7)
+            {
+                return false;
+            }
+            //Calculate the checksum based on the rule
+            int firstNo = Convert.ToInt32(inputUpper[1]);
+            int secNo = Convert.ToInt32(inputUpper[2]);
+            int thirdNo = Convert.ToInt32(inputUpper[3]);
+            int fourNo = Convert.ToInt32(inputUpper[4]);
+            int fifthNo = Convert.ToInt32(inputUpper[5]);
+            int rem=(firstNo+ secNo + thirdNo + fourNo + fifthNo)%5;
+            //Check whether the last character matches the calculated checksum.
+            string re = "";
+            string value;
+            if (result.TryGetValue(rem, out re))
+            {
+                value = re;
+            }
+            else
+                return false;
+
+
+            return true;
+
+        }
+        public static void Main(string[] args)
+        {
+            Console.Write("Enter a matriculation number: ");
+            string inpute=Console.ReadLine();
+            Console.WriteLine(isValidmatriNo(inpute)?"Valid":"Invalid");
+            Console.ReadLine();
+        }
         #endif
         #endregion
     }
