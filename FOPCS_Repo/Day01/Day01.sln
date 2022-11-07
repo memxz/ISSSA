@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WsMiddleware", "WsMiddlewar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workshop_Session", "Workshop_Session\Workshop_Session.csproj", "{F54A6F7C-B7E6-4EB3-86B9-82FFB318DE39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop_EF_Core", "ConsoleApp1\Workshop_EF_Core.csproj", "{F7B07A1A-E917-44AD-9292-36D60758E847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workshop_EF_Core", "ConsoleApp1\Workshop_EF_Core.csproj", "{F7B07A1A-E917-44AD-9292-36D60758E847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAA", "TestAA\TestAA.csproj", "{984540D5-D06A-40BB-BD87-417608FEA074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{F7B07A1A-E917-44AD-9292-36D60758E847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7B07A1A-E917-44AD-9292-36D60758E847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7B07A1A-E917-44AD-9292-36D60758E847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984540D5-D06A-40BB-BD87-417608FEA074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984540D5-D06A-40BB-BD87-417608FEA074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984540D5-D06A-40BB-BD87-417608FEA074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984540D5-D06A-40BB-BD87-417608FEA074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
