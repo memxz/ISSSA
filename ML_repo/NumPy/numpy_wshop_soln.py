@@ -41,7 +41,6 @@ def sums_to_value(mat, val):
         l2r_sum += mat[i, i]    
         # moving from bottom-right to top-left
         r2l_sum += mat[mat.shape[0]-1-i, i]
-
     return (l2r_sum == val) or (r2l_sum == val)
 
 
