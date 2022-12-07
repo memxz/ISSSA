@@ -26,3 +26,13 @@
 ### Exercise D
 ### Exercise E
 ### Exercise F
+
+## Entity Framework
+## LINQ
+## ADO .NET 
+## Session
+## Javascript
+## Ajax
+## Dependent Injection
+## 
+
